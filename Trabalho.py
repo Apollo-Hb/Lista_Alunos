@@ -1,7 +1,6 @@
 """
 Crie uma aplicação Python que tera uma lista de alunos, com as notas de b1 e b2, um menu para selecionar a opção
 
-
 1 - adicionar aluno
 2 - listar aluno
 3 - remover aluno
@@ -16,13 +15,13 @@ Crie uma aplicação Python que tera uma lista de alunos, com as notas de b1 e b
 0 - sair
 
 
-
-para o item 11 deve:Deve imprimir na tela neste padrão exatamente, com os alinhamentos igual ao exemplo abaixo:
-Total linha: 56 colunas
+Para o item 11 deve:Deve imprimir na tela neste padrão exatamente, com os alinhamentos igual ao exemplo abaixo:
+Total linha: 56 colunas.
 RA: 5 CARACTERES
 Nome: 27 CARACTERES
 B1, B2, Média: 5 CARACTERES CADA
 DICA: var.ljust(QTD, CHAR) | var.rjust(QTD, CHAR)
+
 
 --------------------------------------------------------
                    Diario da turma
@@ -36,7 +35,6 @@ RA    Nome                      Nota B1  Nota B2   Média
 --------------------------------------------------------
                   Médias da Turma 10.00    10.00   10.00
 --------------------------------------------------------
-
 
 Deve ser entregue o link do repositório do github.
 """
