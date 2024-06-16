@@ -1,18 +1,44 @@
 """
-tera uma lista de alunos, com as notas de b1 e b2,
-um menu para selecionar a opção
+Crie uma aplicação Python que tera uma lista de alunos, com as notas de b1 e b2, um menu para selecionar a opção
+
+
 1 - adicionar aluno
 2 - listar aluno
 3 - remover aluno
 4 - procurar aluno
 5 - aprovados
 6 - reprovados
-7 - procurar pelo nome do aluno
-8 - media b1
-9 - media b2
-10 - media geral da turma
-11 - Diário
+7 - Procurar pelo nome do aluno
+8 - Média da turma B1
+9 - Média da turma B2
+10 - Média da turma GERAL
+11 - Diário da turma
 0 - sair
+
+
+
+para o item 11 deve:Deve imprimir na tela neste padrão exatamente, com os alinhamentos igual ao exemplo abaixo:
+Total linha: 56 colunas
+RA: 5 CARACTERES
+Nome: 27 CARACTERES
+B1, B2, Média: 5 CARACTERES CADA
+DICA: var.ljust(QTD, CHAR) | var.rjust(QTD, CHAR)
+
+--------------------------------------------------------
+                   Diario da turma
+--------------------------------------------------------
+RA    Nome                      Nota B1  Nota B2   Média
+--------------------------------------------------------
+00001 Aluno fulano de tal         10.00    10.00   10.00
+00001 Aluno fulano de tal         10.00    10.00   10.00
+00001 Aluno fulano de tal         10.00    10.00   10.00
+00001 Aluno fulano de tal         10.00    10.00   10.00
+--------------------------------------------------------
+                  Médias da Turma 10.00    10.00   10.00
+--------------------------------------------------------
+
+
+Deve ser entregue o link do repositório do github.
 """
 
 alunos = {}
