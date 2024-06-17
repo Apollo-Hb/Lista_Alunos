@@ -122,24 +122,28 @@ def procurar_nome():
     input("presione qualquer tecla para continuar!")
 
 def media_b1():
-    soma= 0
+    soma = 0
     qtd = 0
     for dados in alunos.values():
         soma += dados['b1']
         qtd += 1
-    media = soma / qtd
-    print(f"a media de B1 é : {media:.2f}")
-    input("Pressione qualquer tecla para continuar")
+    if qtd > 0:
+        media = soma / qtd
+        print(f"A média de B1 é: {media:.2f}")
+    else:
+        input("Pressione qualquer tecla para continuar")
 
 def media_b2():
-    soma= 0
+    soma = 0
     qtd = 0
     for dados in alunos.values():
         soma += dados['b2']
         qtd += 1
-    media = soma / qtd
-    print(f"a media de B2 é : {media:.2f}")
-    input("Pressione qualquer tecla para continuar")
+    if qtd > 0:
+        media = soma / qtd
+        print(f"A média de B2 é: {media:.2f}")
+    else:
+        input("Pressione qualquer tecla para continuar")
     
 def media_geral():
     total = 0
@@ -152,7 +156,6 @@ def media_geral():
         print(f"Média geral da turma: {media}")
     input("Pressione qualquer tecla para continuar")
 
-    
 def diario():
     cabecalho = '--------------------------------------------------------\n'
     titulo = '                   Diario da turma\n'
