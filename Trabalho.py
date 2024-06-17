@@ -121,42 +121,37 @@ def procurar_nome():
             print(f"RA: {ra} - Nome: {dados['nome']} - B1: {dados['b1']} - B2: {dados['b2']}")
     input("presione qualquer tecla para continuar!")
 
-def media_b1(alunos):
-    if alunos:
-        soma = 0
-        contador = 0
-        for aluno in alunos:
-            soma += aluno['Nota B1']
-            contador += 1
-        media = soma / contador if contador else 0
-        print(f"Média B1 da turma: {media:.2f}")
-    input("presione qualquer tecla para continuar!")
+def media_b1():
+    soma= 0
+    qtd = 0
+    for dados in alunos.values():
+        soma += dados['b1']
+        qtd += 1
+    media = soma / qtd
+    print(f"a media de B1 é : {media:.2f}")
+    input("Pressione qualquer tecla para continuar")
+
+def media_b2():
+    soma= 0
+    qtd = 0
+    for dados in alunos.values():
+        soma += dados['b2']
+        qtd += 1
+    media = soma / qtd
+    print(f"a media de B2 é : {media:.2f}")
+    input("Pressione qualquer tecla para continuar")
     
-def media_b2(alunos):
-    if alunos:
-        soma = 0
-        contador = 0
-        for aluno in alunos:
-            soma += aluno['Nota B2']
-            contador += 1
-        media = soma / contador if contador else 0
-        print(f"Média B2 da turma: {media:.2f}")
-    input("presione qualquer tecla para continuar!")
-    
-def media_geral(alunos):
-    if alunos:
-        soma_b1 = 0
-        soma_b2 = 0
-        contador = 0
-        for aluno in alunos:
-            soma_b1 += aluno['Nota B1']
-            soma_b2 += aluno['Nota B2']
-            contador += 1
-        media_b1 = soma_b1 / contador if contador else 0
-        media_b2 = soma_b2 / contador if contador else 0
-        media_geral = (media_b1 + media_b2) / 2 if contador else 0
-        print(f"Média geral da turma: {media_geral:.2f}")
-    input("presione qualquer tecla para continuar!")
+def media_geral():
+    total = 0
+    soma = 0
+    for dados in alunos.items():
+        total += (dados['b1'] + dados['b2'])
+        soma += 1
+    if soma > 0:
+        media = total / (2 * soma)
+        print(f"Média geral da turma: {media}")
+    input("Pressione qualquer tecla para continuar")
+
     
 def diario():
     cabecalho = '--------------------------------------------------------\n'
