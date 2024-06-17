@@ -1,3 +1,5 @@
+# aluno: Apollo
+
 """
 Crie uma aplicação Python que tera uma lista de alunos, com as notas de b1 e b2, um menu para selecionar a opção
 
